@@ -1,0 +1,35 @@
+Write a program to generate the following series --- 121,225,361,... 
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting.
+
+Sample Input & Output:
+
+5
+
+121 225 361 529 729 
+
+//Anmswer//
+
+import java.util.*;
+public class Series5
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int s=11;
+        System.out.println(s*s);
+        for(int i=1;i<n;i++)
+        {
+            s=s+4;
+            System.out.println(s*s);
+        }
+    }
+}
